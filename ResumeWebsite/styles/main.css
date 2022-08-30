@@ -93,9 +93,39 @@ li{
     align-items: center;
 }
 
+.card--project{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+.card--work-history{
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
 @media(max-width:600px){
 
     .section--page{
+        max-width: 700px;
+        margin: 0 auto;
         padding-top: 1em;
         padding-bottom: 1em;
     }
@@ -115,4 +145,8 @@ li{
         flex-direction: column;
     }
 
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
 }
